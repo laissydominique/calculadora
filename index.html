@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style/exercicio.css">
+    <link rel="shortcut icon" href="./foto.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="conteiner">
+      <h1>Calculadora</h1>
+      <div class="botoes">
+        <input id="1num" type="number" placeholder="digite um número" />
+        <input id="sinal" placeholder="digite um sinal matemático" />
+        <input id="2num" type="number" placeholder="digite outro número" />
+        <button onclick="calcular()">Calcular</button>
+        <p class="botaofinal">Resultado</p>
+        <p id="result"></p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      function calcular() {
+        const valor1 = +document.getElementById("1num").value;
+        const sinal = document.getElementById("sinal").value;
+        const valor2 = +document.getElementById("2num").value;
+        var resultado;
+
+        if (sinal === "x") {
+          resultado = valor1 * valor2;
+        } else if (sinal === "/") {
+          resultado = valor1 / valor2;
+        } else if (sinal === "+") {
+          resultado = valor1 + valor2;
+        } else if (sinal === "-") {
+          resultado = valor1 - valor2;
+        } else {
+          resultado = "";
+          Swal.fire("Digite um sinal de operação válido!");
+        }
+        document.getElementById("result").innerHTML = resultado;
+      }
+    </script>
+  </body>
+</html>
