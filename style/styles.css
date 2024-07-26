@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+ border: none;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: greenyellow;
+  font-size: 55px;
+  padding-top: 20px;
+  margin-bottom: 70px;
+}
+
+label{
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 10px;
+  width: 300px;
+  font-size: 50px;
+}
+
+.botoes{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+input{
+  background-color: rgba(0, 0, 0, 0);
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid greenyellow;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+
+button{
+  margin-top: 50px;
+  width: 322px;
+  height: 50px;
+  background-color:rgba(172, 255, 47, 0.567);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius:15px ;
+  border: 0;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+.botaofinal{
+  color: greenyellow;
+  margin-top: 60px;
+  font-size: 25px;
+  font-size: 35px;
+}
+.divRes{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color:rgba(172, 255, 47, 0.567);
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  height: 20px;
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+
+
+
